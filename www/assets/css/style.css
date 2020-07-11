@@ -15,7 +15,7 @@ body {
   background-image: url(../img/bg/first-screen.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right top;
+  background-position: 60% 10%;
 }
 
 .first-screen__body {
@@ -36,7 +36,7 @@ body {
 }
 
 .main-content {
-  width: 550px;
+  width: 549px;
 }
 
 .main-content__text {
@@ -85,6 +85,7 @@ input[type="text"]::placeholder {
   background-color: #313131;
   border-radius: 15.0px;
   padding: 32px;
+  margin-bottom: 150px;
 }
 
 .main-form__input-wrapp {
@@ -138,5 +139,40 @@ input[type="text"]::placeholder {
   font-size: 12px;
   font-weight: 300;
   color: #b5b8c1;
+}
+
+.video-arrow-wrapp {
+  width: 35%;
+  align-self: flex-end;
+  margin-bottom: 168px;
+}
+
+.video-arrow {
+  margin: 0 auto;
+  cursor: pointer;
+  width: 219px;
+  height: 57px;
+  background-color: #ff0000;
+  border-radius: 28.5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 12px 12px 8px;
+}
+
+.video-arrow__play {
+  margin: 0 12px;
+}
+
+.video-arrow__svg {
+  fill: #fbfbfd;
+}
+
+.video-arrow__text {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
