@@ -4,8 +4,10 @@
 // font-family: 'Montserrat', sans-serif;
 // font-family: 'Oswald', sans-serif;
 
-$font-one: 'Montserrat',sans-serif;
-$font-two: 'Oswald',sans-serif;
+$font-one: 'Montserrat',
+sans-serif;
+$font-two: 'Oswald',
+sans-serif;
 $primary-color: #ff0000;
 $second-color: #1f1f1f;
 
@@ -13,10 +15,12 @@ html,
 body {
     margin: 0;
     padding: 0;
+    font-size: 20px;
 }
 
 * {
     box-sizing: border-box;
+    font-family: $font-one;
 }
 
 a {
