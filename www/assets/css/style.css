@@ -2,13 +2,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
 html,
 body {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 * {
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
 }
 
 .first-screen {
@@ -95,7 +98,7 @@ input[type="text"]::placeholder {
 .main-form__input {
   width: 383px;
   height: 56px;
-  background-color: #0a0a0a;
+  background-color: #1f1f1f;
   border-radius: 10.0px;
   color: #b5b8c1;
   padding-left: 60px;
@@ -114,7 +117,7 @@ input[type="text"]::placeholder {
 
 .main-form__svg {
   fill: none;
-  stroke: #f10b0b;
+  stroke: #ff0000;
   stroke-width: 4;
   stroke-linecap: round;
   stroke-miterlimit: 10;
