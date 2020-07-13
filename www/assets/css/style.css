@@ -19,11 +19,11 @@ a {
 .nav-wrapp {
   position: fixed;
   top: 50%;
-  right: 100px;
+  right: 50px;
   background-color: #fff;
   width: 100px;
   height: 300px;
-  transform: translate(-100%, -50%);
+  transform: translate(0, -50%);
 }
 
 .first-screen {

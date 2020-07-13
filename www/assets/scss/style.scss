@@ -4,11 +4,11 @@
 .nav-wrapp {
     position: fixed;
     top: 50%;
-    right: 100px;
+    right: 50px;
     background-color: #fff;
     width: 100px;
     height: 300px;
-    transform: translate(-100%, -50%);
+    transform: translate(0, -50%);
 
 }
 
@@ -77,6 +77,8 @@
         text-transform: uppercase;
         color: #ffffff;
         margin: -67px -9px -34px;
+        // animation-name: textBg;
+        // animation-duration: 10;
         background: linear-gradient(80deg, #fdfdfd 20%, #404041 66%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
