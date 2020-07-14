@@ -15,6 +15,15 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
 .nav-wrapp {
   position: fixed;
   display: flex;
@@ -423,6 +432,8 @@ input[type="text"]::placeholder {
 }
 
 .study-screen {
+  max-width: 1200px;
+  margin: 0 auto;
   margin-top: 41px;
 }
 
@@ -433,10 +444,23 @@ input[type="text"]::placeholder {
 }
 
 .study-tittle {
-  font-size: 50px;
+  font-size: 49px;
   font-weight: 700;
   text-transform: uppercase;
   align-content: center;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1600px) {
+  .study-tittle {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .study-tittle {
+    font-size: 22px;
+  }
 }
 
 .study-tittle__conteiner {
@@ -452,6 +476,7 @@ input[type="text"]::placeholder {
 }
 
 .study-tittle__tittle {
+  text-align: center;
   color: #1f1f1f;
   margin: 0 30px;
 }
@@ -459,5 +484,105 @@ input[type="text"]::placeholder {
 .study-tittle__subtittle {
   text-align: center;
   color: #ff0000;
+}
+
+.study-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .study-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.study-list__item {
+  width: 45.9%;
+  background-color: #f1f1f1;
+  border-radius: 10.0px;
+  margin: 30px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 19px;
+}
+
+@media screen and (max-width: 1200px) {
+  .study-list__item {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .study-list__item {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .study-list__item {
+    width: 90%;
+  }
+}
+
+.study-list__number {
+  font-family: Montserrat;
+  font-size: 63px;
+  font-weight: 900;
+  color: #ffffff;
+  margin-right: 19px;
+}
+
+.study-list__text {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.study-content {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.study-content__tittle {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  color: #ff0000;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .study-content__tittle {
+    font-size: 22px;
+  }
+}
+
+.study-content__list {
+  text-align: center;
+}
+
+.study-content__item {
+  font-size: 26px;
+  font-weight: 600;
+  color: #1f1f1f;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .study-content__item {
+    font-size: 18px;
+  }
+}
+
+.main-form__button {
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
