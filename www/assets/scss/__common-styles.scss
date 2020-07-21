@@ -15,7 +15,6 @@ html,
 * {
     margin: 0;
     padding: 0;
-    //font-size: 20px;
 }
 
 * {
@@ -24,7 +23,6 @@ html,
 }
 
 a {
-    // list-style: none;
     text-decoration: none;
 }
 
@@ -36,4 +34,40 @@ li {
 ul {
     margin-left: 0;
     padding-left: 0;
+}
+
+a:active,
+a:focus {
+    outline: none;
+}
+
+input,
+textarea {
+    outline: none;
+}
+
+input:active,
+textarea:active {
+    outline: none;
+}
+
+:focus {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+textarea {
+    resize: horizontal;
+}
+
+button:active,
+button:focus {
+    outline: none;
 }

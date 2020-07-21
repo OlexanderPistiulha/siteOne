@@ -9,7 +9,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 60% 10%;
-    //position: relative;
 
     &__body {
         min-height: 100vh;
@@ -26,15 +25,7 @@
 .conteiner {
     max-width: 1900px;
     margin: 0 auto;
-    padding: 0 50px 0 50px;
-
-    // @media screen and (max-width: 1400px) {
-    //     padding: 0 145px 0 50px;
-    // }
-
-    // @media screen and (max-width: 960px) {
-    //     padding: 0 50px 0 50px;
-    // }
+    padding: 0 67px 0 50px;
 
     @media screen and (max-width: 730px) {
         padding: 0 20px 0 20px;
@@ -73,8 +64,6 @@
         text-transform: uppercase;
         color: #ffffff;
         margin: -67px -9px -34px;
-        // animation-name: textBg;
-        // animation-duration: 10;
         background: linear-gradient(80deg, #fdfdfd 20%, #404041 66%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -115,8 +104,6 @@
         flex-direction: column;
     }
 }
-
-
 
 .main-form {
     text-align: center;
@@ -383,7 +370,6 @@ input[type="text"]::placeholder {
     }
 
     &__subtittle {
-        //width: 27%;
         text-align: center;
         color: $primary-color;
     }
@@ -405,7 +391,6 @@ input[type="text"]::placeholder {
 
     &__item {
         width: 45.9%;
-        //height: 125px;
         background-color: #f1f1f1;
         border-radius: 10.0px;
         margin: 30px 22px;
@@ -424,6 +409,9 @@ input[type="text"]::placeholder {
 
         @media screen and (max-width: 600px) {
             width: 90%;
+            flex-direction: column;
+            text-align: center;
+
         }
 
     }
@@ -434,6 +422,10 @@ input[type="text"]::placeholder {
         font-weight: 900;
         color: #ffffff;
         margin-right: 19px;
+
+        @media screen and (max-width: 600px) {
+            font-size: 40px;
+        }
     }
 
     &__text {
@@ -441,6 +433,11 @@ input[type="text"]::placeholder {
         font-size: 20px;
         font-weight: 600;
         color: #000000;
+
+        @media screen and (max-width: 600px) {
+            font-size: 18px;
+            margin-top: 5px;
+        }
     }
 
     &__hexagonal {}
@@ -467,7 +464,6 @@ input[type="text"]::placeholder {
     }
 
     &__item {
-        //text-align: center;
         font-size: 26px;
         font-weight: 600;
         color: $second-color;
@@ -477,12 +473,118 @@ input[type="text"]::placeholder {
             font-size: 18px;
         }
     }
-
 }
 
 .main-form {
 
     &__button {
         margin: 0 auto;
+    }
+}
+
+
+// --------------------------------------------------------chess screen--------------------------------------------------------
+
+.chess {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/bg/chess-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+
+    &__body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__content {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+
+        }
+    }
+}
+
+
+
+.column {
+
+    width: 34%;
+    margin-right: 40px;
+
+    @media screen and (max-width:1400px) {
+        width: 40%;
+        margin-right: 0;
+    }
+
+    @media screen and (max-width: 1000px) {
+        width: 90%;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+
+
+    &__number {
+
+        font-size: 60px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #ff0000;
+        margin-bottom: 25px;
+
+        @media screen and (max-width:1400px) {
+            font-size: 45px;
+        }
+
+        @media screen and (max-width: 800px) {
+            font-size: 26px;
+        }
+    }
+
+    &__title {
+        font-size: 30px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-bottom: 25px;
+
+        @media screen and (max-width:1400px) {
+            font-size: 26px;
+        }
+
+        @media screen and (max-width: 800px) {
+            font-size: 22px;
+        }
+    }
+
+    &__text {
+        font-size: 24px;
+        font-weight: 700;
+        color: #ffffff;
+
+        @media screen and (max-width:1400px) {
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: 800px) {
+            font-size: 18px;
+        }
+    }
+}
+
+.column:nth-child(2) {
+    margin-right: 0px;
+
+    @media screen and (max-width: 1000px) {
+        margin-right: none;
     }
 }
